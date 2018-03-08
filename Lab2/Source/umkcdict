@@ -1,0 +1,9 @@
+dict = {"python":50,"web":30,"c":20,"java":40}
+minm = int(input("Enter the minm price range : "))
+maxm = int(input("Enter the maxm price range : "))
+booklist = []
+for price in range(minm,maxm+1):
+    for bookname in dict:
+        if dict[bookname] == price:
+            booklist.append(bookname)
+print("you can purchase books : " , booklist)
